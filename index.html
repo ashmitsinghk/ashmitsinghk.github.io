@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
-        <script src="https://kit.fontawesome.com/74a3865664.js" crossorigin="anonymous"></script>
-        <title>
-            Ashmit Singh
-        </title>
-    </head>
-    <body>
-        <h1 align=center>
-            <i class="fas fa-exclamation-triangle" style="color: dodgerblue;"></i>
-            This site is currently under development.
-            <i class="fas fa-exclamation-triangle" style="color: dodgerblue;"></i>
-        </h1>
-        <p>
-            **IGNORE THIS SECTION**
-        </p>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74a3865664.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery00.js"></script>
+    <script type="text/javascript" src="ticker00.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fade').list_ticker({
+                speed: 2000,
+                effect: 'fade'
+            });
+            $('#slide').list_ticker({
+                speed: 2000,
+                effect: 'slide'
+            });
+        })
+    </script>
+    <title>
+        Ashmit Singh
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            Hello, I am
+            <ul id="slide" class="scroll">
+                <li>Ashmit Singh</li>
+                <li>a Web Designer</li>
+                <li>a Developer</li>
+                <li>a Graphic Designer</li>
+                <li>a Programmer</li>
+            </ul>
+            HTML / CSS / JS / PYTHON / PS / AI
+        </div>
+    </div>
+    <h1 align=center>
+        <i class="fas fa-exclamation-triangle" style="color: dodgerblue;"></i>
+        This site is currently under development.
+        <i class="fas fa-exclamation-triangle" style="color: dodgerblue;"></i>
+    </h1>
+</body>
+
 </html>
