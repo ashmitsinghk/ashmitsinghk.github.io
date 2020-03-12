@@ -26,7 +26,7 @@
             <div class="sk-chase-dot"></div>
             <div class="sk-chase-dot"></div>
             <div class="sk-chase-dot"></div>
-          </div>
+        </div>
     </div>
     <nav class="navbar navbar-expand-md bg-custom fixed-top" id="navbar">
         <a class="navbar-brand" href="#"><img src="icon.png" height="50px"> &nbsp; Ashmit Singh</a>
@@ -185,12 +185,11 @@
     <script>
         $(document).ready(function () {
             //Preloader
-            preloaderFadeOutTime = 300;
-            function hidePreloader() {
-                var preloader = $('.spinner-wrapper');
-                preloader.delay(5000).fadeOut(preloaderFadeOutTime);
-            }
-            hidePreloader();
+            $(window).load(function () {
+                // PAGE IS FULLY LOADED  
+                // FADE OUT YOUR OVERLAYING DIV
+                $('.spinner-wrapper').fadeOut(500);
+            });
         });
     </script>
     <script src="app.js"></script>
