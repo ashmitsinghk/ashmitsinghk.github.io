@@ -118,10 +118,11 @@ ul {
 
 @media screen and (max-width: 600px) {
     .heading {
-        margin-top: 100px;
+        margin-top: 70px;
         font-size: 25px;
         -webkit-text-stroke: 1px black;
         text-align: center;
+        height: 500px;
     }
     .scroll {
         font-size: 45px;
@@ -132,5 +133,8 @@ ul {
     .mypic {
         margin: 15px;
         height: 200px;
+    }
+    .arrow {
+        bottom: 5%;
     }
 }
