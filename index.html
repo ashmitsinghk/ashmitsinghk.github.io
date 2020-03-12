@@ -15,9 +15,23 @@
 </head>
 
 <body>
+    <div class="spinner-wrapper">
+        <center>
+            <img src="icon.png" class="imgload">
+        </center>
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
+    </div>
     <nav class="navbar navbar-expand-md bg-custom fixed-top" id="navbar">
         <a class="navbar-brand" href="#"><img src="icon.png" height="50px"> &nbsp; Ashmit Singh</a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -167,6 +181,17 @@
                 effect: 'slide'
             });
         })
+    </script>
+    <script>
+        $(document).ready(function () {
+            //Preloader
+            preloaderFadeOutTime = 300;
+            function hidePreloader() {
+                var preloader = $('.spinner-wrapper');
+                preloader.delay(5000).fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+        });
     </script>
     <script src="app.js"></script>
     <br>
