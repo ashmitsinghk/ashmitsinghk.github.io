@@ -66,6 +66,7 @@ ul {
     bottom: 5%;
     right: 3%;
     transition: 0.3s ease all;
+    background-color: aliceblue;
 }
 .top:hover {
     background-color: dodgerblue;
@@ -115,6 +116,32 @@ ul {
     border-bottom: 2px solid dodgerblue;
     font-size: 50px;
 }
+#about {
+    height: auto;
+    width: auto;
+}
+.navbar-brand {
+    color: aliceblue;
+    transition: 0.3s ease all;
+}
+.navbar-brand:hover {
+    transform: scale(1.1);
+    color: white;
+}
+.nav-link {
+    color: aliceblue;
+    transition: 0.3s ease all;
+    margin: auto 5px;
+}
+.nav-link:hover {
+    background-color: aliceblue;
+    color: dodgerblue;
+    border-radius: 25px;
+}
+.navbar-toggler {
+    border-color: aliceblue;
+    border-radius: 40px;
+}
 
 @media screen and (max-width: 600px) {
     .heading {
@@ -126,6 +153,7 @@ ul {
     }
     .scroll {
         font-size: 45px;
+        -webkit-text-stroke: 1.5px rgb(24, 101, 179);
     }
     .row {
         flex-direction: column-reverse;
@@ -136,5 +164,8 @@ ul {
     }
     .arrow {
         bottom: 5%;
+    }
+    .nav-link {
+        text-align: center;
     }
 }
