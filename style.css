@@ -122,6 +122,10 @@ ul {
     height: auto;
     width: auto;
 }
+nav {
+    border-bottom: 2px solid aliceblue;
+    box-shadow: 1px 1px 10px black;
+}
 .navbar-brand {
     color: aliceblue;
     transition: 0.3s ease all;
