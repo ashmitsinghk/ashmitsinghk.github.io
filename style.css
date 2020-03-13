@@ -67,6 +67,7 @@ ul {
     right: 3%;
     transition: 0.3s ease all;
     background-color: aliceblue;
+    z-index: 99999;
 }
 .top:hover {
     background-color: dodgerblue;
@@ -168,14 +169,14 @@ ul {
 .cardrow {
     width: 80%;
     display: flex;
-    margin: 15px auto;
+    margin: 20px auto;
 }
 .card {
     width: 100%;
     background-color: dodgerblue;
     color: aliceblue;
     padding: 10px;
-    margin: 15px;
+    margin: 15px 15px;
     border-radius: 25px;
     height: 350px;
     overflow: hidden;
@@ -216,9 +217,12 @@ ul {
     line-height: 350px;
 }
 .cardtext ul {
-    margin-top: 23%;
+    margin-top: 20%;
+    text-align: left;
 }
-
+.mobile {
+    display: none;
+}
 
 @media screen and (max-width: 940px) {
     .heading {
@@ -248,5 +252,9 @@ ul {
     .cardrow {
         flex-direction: column;
         width: 90%;
+        margin-left: 0;
+    }
+    .mobile {
+        display: block; 
     }
 }
