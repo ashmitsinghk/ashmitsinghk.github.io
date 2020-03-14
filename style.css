@@ -267,10 +267,10 @@ nav {
         display: block; 
     }
     .long {
-        height: 650px;
+        height: 750px;
     }
     .long .cardtitle {
-        line-height: 650px;
+        line-height: 750px;
     }
     .mshort {
         height: 450px;
