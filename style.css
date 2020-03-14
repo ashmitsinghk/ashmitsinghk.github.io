@@ -173,7 +173,7 @@ nav {
 .cardrow {
     width: 80%;
     display: flex;
-    margin: 20px auto;
+    margin: 20px;
 }
 .card {
     width: 100%;
@@ -221,11 +221,16 @@ nav {
     line-height: 350px;
 }
 .cardtext ul {
-    margin-top: 20%;
     text-align: left;
 }
 .mobile {
     display: none;
+}
+.long {
+    height: 550px;
+}
+.long .cardtitle {
+    line-height: 550px;
 }
 
 @media screen and (max-width: 940px) {
@@ -260,5 +265,17 @@ nav {
     }
     .mobile {
         display: block; 
+    }
+    .long {
+        height: 650px;
+    }
+    .long .cardtitle {
+        line-height: 650px;
+    }
+    .mshort {
+        height: 450px;
+    }
+    .mshort .cardtitle {
+        line-height: 450px;
     }
 }
