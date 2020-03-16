@@ -44,6 +44,9 @@ ul {
 .col {
     flex: 50%;
 }
+.quarter {
+    flex: 25%;
+}
 .mypic {
     border-radius: 50%;
     height: 350px;
@@ -232,6 +235,26 @@ nav {
 .long .cardtitle {
     line-height: 550px;
 }
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    border-top: 2px solid aliceblue;
+    background-color: dodgerblue;
+    color: aliceblue;
+    box-shadow: 2px 2px 15px grey;
+    margin-bottom: -100px;
+}
+.quarter ul li a {
+    color: aliceblue;
+}
+.quarter ul li a:hover {
+    color: aliceblue;
+}
 
 @media screen and (max-width: 940px) {
     .heading {
@@ -277,5 +300,8 @@ nav {
     }
     .mshort .cardtitle {
         line-height: 350px;
+    }
+    .footer {
+        display: none;
     }
 }
